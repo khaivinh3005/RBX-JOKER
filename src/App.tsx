@@ -1,12 +1,10 @@
 /* eslint-disable prettier/prettier */
 import "./App.css";
+import useRouteElement from "./useRouteElement";
 
 function App() {
-  return (
-    <div className="App">
-      <div className="text-center">hello</div>
-    </div>
-  );
+  const routeElement = useRouteElement();
+  return <div>{routeElement}</div>;
 }
 
 export default App;
