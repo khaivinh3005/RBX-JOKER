@@ -1,14 +1,15 @@
 /* eslint-disable prettier/prettier */
 import { useRoutes } from "react-router-dom";
-import ProductList from "./pages/ProductList/ProductList";
+import ProductList from "./pages/HomePage/HomePage";
 import CasePage from "./pages/CasePage";
 import LoginLayout from "./pages/Login";
+import HomePage from "./pages/HomePage/HomePage";
 
 const useRouteElement = () => {
   const element = useRoutes([
     {
       path: "/",
-      element: <ProductList />,
+      element: <HomePage />,
     },
     {
       path: "/casepage",
